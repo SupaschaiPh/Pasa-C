@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Local Chakra Petch";
+    src: url("../dist/ChakraPetch-Medium.ttf");
+}
+*{
+    font-family:  "Local Chakra Petch" ,'Chakra Petch', sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+@keyframes animate1 {
+	from {
+		background-position: 0% 70%;
+	}
+	to {
+		background-position: 200% 90%;
+	}
+}
+
+.bg-1 {
+	background-color: #e5f9ef;
+	opacity: 0.8;
+	background-image: linear-gradient(#52d193 1px, transparent 1px),
+		linear-gradient(to right, #52d193 1px, #e5f9ef 1px);
+	background-size: 20px 20px;
+}
+
+.bg-wave1 {
+	background-size:500% 200%;
+	background-position: center center;
+	background-repeat: repeat;
+	animation: animate1 35s infinite alternate linear;
+	background-image: url('data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%231ea065%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%2356b78b%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%232fb075%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%2363c397%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%2341c184%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%2370d0a2%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%2352d193%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%237ddcae%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22e%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%2379dcab%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%239ae4c0%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22f%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23a0e7c3%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23b7edd2%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22g%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23c6f1db%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23d4f4e4%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22h%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23edfcf3%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f1fcf6%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%230c8f56%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 155c123.77 9.933 247.539 19.865 355 17 107.461-2.865 198.614-18.529 302-25s219.004-3.75 336 0c116.996 3.75 235.37 8.531 341 12 105.63 3.469 198.516 5.626 321 8 122.484 2.374 274.567 4.964 337 3 62.433-1.964 35.217-8.482 48-15l-40 1245H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 311c96.906-9.123 193.812-18.245 311-23 117.188-4.755 254.66-5.142 375 3s223.55 24.811 327 26c103.45 1.189 207.141-13.104 311-20 103.859-6.896 207.885-6.395 333-5 125.115 1.395 271.319 3.684 332 7 60.681 3.316 35.84 7.658 51 12l-40 1089H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 466c98.977 8.526 197.954 17.051 315 12 117.046-5.051 252.16-23.68 363-32s197.408-6.335 305 6c107.592 12.335 236.21 35.018 346 34 109.79-1.018 200.751-25.735 331-27 130.249-1.265 299.785 20.924 363 26 63.215 5.076 20.107-6.962 17-19l-40 934H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 622c103.78-2.135 207.56-4.27 317-3 109.44 1.27 224.537 5.947 344 12s243.29 13.48 359 4c115.71-9.48 223.304-35.871 320-34 96.696 1.871 182.495 32.004 311 34 128.505 1.996 299.716-24.144 365-31 65.284-6.856 24.642 5.572 24 18l-40 778H0Z%22 fill=%22url(%23d)%22%2F%3E%3Cpath d=%22M0 777c120.91-7.951 241.82-15.902 348-14 106.18 1.902 197.63 13.659 306 14 108.37.341 233.657-10.732 354-8 120.343 2.732 235.741 19.268 338 17 102.259-2.268 191.377-23.341 319-28 127.623-4.659 293.75 7.098 356 13s20.625 5.951 19 6l-40 623H0Z%22 fill=%22url(%23e)%22%2F%3E%3Cpath d=%22M0 933c111.163-10.214 222.327-20.429 330-17 107.673 3.429 211.856 20.5 323 30s229.248 11.427 340 8c110.752-3.427 214.15-12.207 322-16 107.85-3.793 220.152-2.598 355-1 134.848 1.598 292.242 3.6 351 3 58.758-.6 18.879-3.8 19-7l-40 467H0Z%22 fill=%22url(%23f)%22%2F%3E%3Cpath d=%22M0 1088c122.215 1.806 244.43 3.611 351 6s197.493 5.361 300 3c102.507-2.361 216.597-10.055 332-11 115.403-.945 232.118 4.86 340 0s206.93-20.385 336-20c129.07.385 288.163 16.682 350 23 61.837 6.318 26.419 2.66 31-1l-40 312H0Z%22 fill=%22url(%23g)%22%2F%3E%3Cpath d=%22M0 1244c122.04 10.11 244.08 20.218 348 15 103.92-5.218 189.72-25.765 293-22 103.28 3.765 224.042 31.84 346 29s245.112-36.596 353-41c107.888-4.404 200.508 20.545 321 28 120.492 7.455 268.855-2.584 330-7 61.145-4.416 35.073-3.208 49-2l-40 156H0Z%22 fill=%22url(%23h)%22%2F%3E%3C%2Fsvg%3E');
+}
