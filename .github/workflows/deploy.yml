@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check dir
-        run: dir && ls
+        run: dir
       - name: Change dir path
         run: cd docs/
       - name: Checkout
