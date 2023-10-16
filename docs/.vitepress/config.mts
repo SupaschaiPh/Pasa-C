@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "PasaC 101",
   description: "pasa cccccc project",
+  base:"/Pasa-C/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     lastUpdated: {
