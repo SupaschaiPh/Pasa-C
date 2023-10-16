@@ -28,14 +28,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check dir
-        run: dir
-      - name: Change dir path
-        run: cd docs/
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          dir: ./dosc
+          branch: docs
       # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
       # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
       - name: Setup Node
@@ -43,13 +41,20 @@ jobs:
         with:
           node-version: 18
           cache: npm # or pnpm / yarn
+          dir: ./dosc
+          branch: docs
       - name: Setup Pages
         uses: actions/configure-pages@v3
+        with:
+          dir: ./dosc
+          branch: docs
+      - name: Show all dir
+        run: ls -la
       - name: Install dependencies
-        run: npm ci # or pnpm install / yarn install / bun install
+        run: cd ./dosc && npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: |
-          npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+          cd ./dosc && npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
           touch docs/.vitepress/dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
