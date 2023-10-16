@@ -5,7 +5,7 @@ hero:
   name: "PasaC 101"
   text: "pasa cccccc project"
   tagline: My great project tagline
-  image: "https://img.guildedcdn.com/ContentMediaGenericFiles/443cbba5affb11c14d9bc989bea73b9c-Full.webp?w=1380&h=1380"
+  image: "https://img.guildedcdn.com/ContentMediaGenericFiles/c66a149d3974ccb3260ec222852437e9-Full.webp?w=450&h=450"
   actions:
     - theme: brand
       text: Markdown Examples
