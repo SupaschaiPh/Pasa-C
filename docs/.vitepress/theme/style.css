@@ -49,10 +49,10 @@
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
+  --vp-c-brand-soft: var(--vp-c-green-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -133,6 +133,10 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Custom CSS
+ * -------------------------------------------------------------------------- */
+
 @keyframes animate-bg-1 {
   from{
     background-position: 0% 0%;
@@ -154,4 +158,10 @@ html.dark .is-home {
   opacity: 1;
   background-image: radial-gradient(#38cdb225 1.35px, rgba(255, 255, 255, 0) 1.35px);
   background-size: 27px 27px;
+}
+
+.is-home .VPHero{
+  height: 100svh;
+  margin-top: auto;
+  margin-bottom: auto;
 }
