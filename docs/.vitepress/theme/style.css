@@ -43,7 +43,7 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -92,17 +92,13 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #34fecc 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #34fecc 30%,
+      #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #34fecc 50%,
-    #47caff 50%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #34fecc 50%,
+      #47caff 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 
@@ -137,3 +133,25 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+@keyframes animate-bg-1 {
+  from{
+    background-position: 0% 0%;
+  }
+  to{
+    background-position: -200% 0%;
+  }
+}
+
+.is-home {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  background-image: radial-gradient(#38cdb260 1.35px, rgba(255, 255, 255, 0) 1.35px);
+  background-size: 27px 27px;
+  animation: animate-bg-1 50s infinite linear;
+}
+html.dark .is-home {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  background-image: radial-gradient(#38cdb225 1.35px, rgba(255, 255, 255, 0) 1.35px);
+  background-size: 27px 27px;
+}

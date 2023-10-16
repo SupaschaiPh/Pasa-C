@@ -25,18 +25,19 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: 'example/markdown-examples' }
     ],
 
-    sidebar: [
-      {
+    sidebar: {
+      "/example/": [{
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown Examples', link: 'example/markdown-examples' },
+          { text: 'Runtime API Examples', link: 'example/api-examples' }
         ]
-      }
-    ],
+      }]
+    }
+    ,
 
     socialLinks: [
       { icon: 'github', link: '' }
