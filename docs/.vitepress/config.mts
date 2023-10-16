@@ -6,6 +6,23 @@ export default defineConfig({
   description: "pasa cccccc project",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
+
+    editLink: {
+      pattern: 'https://github.com/SupaschaiPh/Pasa-C/edit/docs/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
+
+    search: {
+      provider: 'local'
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
