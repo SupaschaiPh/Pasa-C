@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
-  <head class="overflow-hidden h-screen w-screen">
+<html class="overflow-hidden h-screen w-screen">
+  <head >
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet" />
     <link href="../dist/animate.min.css" rel="stylesheet" />
     <script src="../dist/flowbite.min.js"></script>
+    <title>Log</title>
   </head>
   <body class="overflow-hidden h-screen w-screen">
     <nav
@@ -52,7 +53,7 @@
 
     <aside
       id="default-sidebar"
-      class="absolute top-0 left-0 z-40 sm:z-10 w-64 h-screen max-h-screen  transition-transform -translate-x-full sm:translate-x-0 sm:pt-16 overflow-scroll"
+      class="absolute top-0 left-0 z-40 sm:z-10 w-64 h-screen max-h-screen transition-transform -translate-x-full sm:translate-x-0 sm:pt-16 overflow-scroll"
       aria-label="Sidebar"
     >
       <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
@@ -140,20 +141,20 @@
       </div>
     </aside>
 
-    <section class="mt-20 p-4 sm:ml-64 overflow-scroll h-screen">
-      <a
-        href="#"
-        class="bg-wave1 p-6 h-48 flex items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+    <section class="mt-20 p-4 sm:ml-64 overflow-scroll max-h-screen h-fit">
+      <h1
+        class="mb-2 text-4xl font-bold tracking-tight flex items-center gap-1"
       >
-        <h1
-          class="mb-2 text-5xl font-bold tracking-tight text-primary-900 flex items-center gap-1"
-        >
-        <svg class="w-12 h-12 text-primary-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-          <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
-        </svg>คู่มือการใช้งาน
-        </h1>
-      </a>
-
+        Logเหตุการ์ณที่เกิดขึ้นกับกล่อง
+      </h1>
+      <div class="mt-6">
+        <textarea
+          id="message"
+          rows="25"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+          placeholder="..."
+        ></textarea>
+      </div>
     </section>
   </body>
 </html>

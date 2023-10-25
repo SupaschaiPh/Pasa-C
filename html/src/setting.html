@@ -52,7 +52,7 @@
 
     <aside
       id="default-sidebar"
-      class="absolute top-0 left-0 z-40 sm:z-10 w-64 h-screen max-h-screen  transition-transform -translate-x-full sm:translate-x-0 sm:pt-16 overflow-scroll"
+      class="absolute top-0 left-0 z-40 sm:z-10 w-64 h-screen max-h-screen transition-transform -translate-x-full sm:translate-x-0 sm:pt-16 overflow-scroll"
       aria-label="Sidebar"
     >
       <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
@@ -141,19 +141,69 @@
     </aside>
 
     <section class="mt-20 p-4 sm:ml-64 overflow-scroll h-screen">
-      <a
-        href="#"
-        class="bg-wave1 p-6 h-48 flex items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      <h1
+        class="mb-2 text-4xl font-bold tracking-tight flex items-center gap-1"
       >
-        <h1
-          class="mb-2 text-5xl font-bold tracking-tight text-primary-900 flex items-center gap-1"
-        >
-        <svg class="w-12 h-12 text-primary-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
-          <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
-        </svg>คู่มือการใช้งาน
-        </h1>
-      </a>
-
+        ตั้งค่ากล่อง
+      </h1>
+      <form class="flex flex-wrap mt-6">
+        <div class="sm:w-1/2 w-full p-3">
+          <label
+            for="username"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Username</label
+          >
+          <input
+            name="username"
+            id="username"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder=""
+            
+          />
+        </div>
+        <div class="sm:w-1/2 p-3">
+        </div>
+        <div class="sm:w-1/2 w-full p-3">
+            <label
+              for="oldpassword"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Old Password</label
+            >
+            <input
+              name="oldpassword"
+              id="oldpassword"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder=""
+              
+            />
+          </div>
+          <div class="w-1/2 p-3">
+          </div>
+        <div class="sm:w-1/2 w-full p-3">
+          <label
+            for="newpassword"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >New Password</label
+          >
+          <input
+            name="newpassword"
+            id="password"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+            placeholder=""
+            
+          />
+        </div>
+        <div class="w-1/2 p-3">
+        </div>
+        <div class="w-1/2 p-3">
+          <button
+            type="submit"
+            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+          >
+            บันทึก
+          </button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
