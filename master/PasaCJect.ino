@@ -71,10 +71,6 @@ void setup() {
   });
 
   server.begin();
-
-  Serial.print("Open http://");
-  Serial.print(WiFi.localIP());
-  Serial.println("/ in your browser to see it working");
 }
 
 void loop() {
