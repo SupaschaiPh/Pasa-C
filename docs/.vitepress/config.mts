@@ -55,7 +55,7 @@ export default defineConfig({
     ,
 
     socialLinks: [
-      { icon: 'github', link: '' }
+      { icon: 'github', link: 'https://github.com/SupaschaiPh/Pasa-C/' }
     ]
   }
 })
