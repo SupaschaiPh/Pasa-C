@@ -41,7 +41,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: 'example/markdown-examples' },
-      { text: 'Project Details', link: 'datails/project_details'},
+      { text: 'Project Details', link: 'details/project_details'},
       { text: 'Source Code', link: 'source_code/project_source_code'}
     ],
 
