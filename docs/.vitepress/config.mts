@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "PasaC 101",
-  description: "pasa cccccc project",
+  title: "BoxyBox",
+  description: "BoxyBox Pasa C Project",
   base: "/Pasa-C/",
   head: [
     [
