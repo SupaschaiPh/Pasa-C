@@ -40,21 +40,9 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: 'example/markdown-examples' },
       { text: 'Project Details', link: 'details/project_details'},
       { text: 'Source Code', link: 'source_code/project_source_code'}
     ],
-
-    sidebar: {
-      "/example/": [{
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: 'example/markdown-examples' },
-          { text: 'Runtime API Examples', link: 'example/api-examples' }
-        ]
-      }]
-    }
-    ,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SupaschaiPh/Pasa-C/' }
