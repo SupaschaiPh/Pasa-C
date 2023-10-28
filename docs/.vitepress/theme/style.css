@@ -168,6 +168,15 @@ html.dark .is-home {
 
 .is-home .VPHero {
   height: 100svh;
-  margin-top: auto;
-  margin-bottom: auto;
+}
+
+.VPHero>container{
+    padding: 2rem;
+    background: #0000000f;
+    border-radius: 1rem;
+}
+html.dark .VPHero>container{
+    padding: 2rem;
+    background: #ffffff0d;
+    border-radius: 1rem;
 }
