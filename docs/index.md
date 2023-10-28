@@ -5,7 +5,7 @@ hero:
   name: "BoxyBox"
   text: "BoxyBox Pasa C Project"
   tagline: My great project tagline
-  image: "https://img.guildedcdn.com/ContentMediaGenericFiles/c66a149d3974ccb3260ec222852437e9-Full.webp?w=450&h=450"
+  image: "https://cdn.discordapp.com/attachments/1021396799904305184/1167743826732011601/MagicEraser_5661028_153644.png?ex=654f3d2f&is=653cc82f&hm=dacf819ab945b3606cb535afb0d4a0db3dc962737e8fc8ab1a7b529a6f4db000&"
   actions:
     - theme: brand
       text: Details

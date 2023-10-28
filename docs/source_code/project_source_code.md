@@ -1,6 +1,4 @@
-# Source Code ต่างๆของ BoxyBox Project
-
-## Source Code การตั้งค่า NodeMCU V3 Lua WIFI Module
+# Source Code ของ BoxyBox Project
 ````
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
@@ -85,14 +83,4 @@ void loop() {
   ArduinoOTA.handle();
   server.handleClient();
 }
-````
-
-## Source Code การตั้งค่าจอ LCD
-````
-
-````
-
-## Source Code การตั้งค่า Servo Motor
-````
-
 ````
