@@ -170,12 +170,12 @@ html.dark .is-home {
   height: 100svh;
 }
 
-.VPHero>container{
+.VPHero>.container{
     padding: 2rem;
     background: #0000000f;
     border-radius: 1rem;
 }
-html.dark .VPHero>container{
+html.dark .VPHero>.container{
     padding: 2rem;
     background: #ffffff0d;
     border-radius: 1rem;
