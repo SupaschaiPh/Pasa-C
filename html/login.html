@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="overflow-hidden h-screen w-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="../dist/animate.min.css" rel="stylesheet" />
+    <script src="../dist/flowbite.min.js"></script>
+    <title>Login</title>
+  </head>
+  <body class="overflow-hidden h-screen w-screen">
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <div href="#" class="flex items-center h-fit">
+          <button
+            data-drawer-target="default-sidebar"
+            data-drawer-toggle="default-sidebar"
+            aria-controls="default-sidebar"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          >
+            <span class="sr-only">Open sidebar</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+              ></path>
+            </svg>
+          </button>
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            class="h-8 mr-3"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Flowbite</span
+          >
+        </div>
+      </div>
+    </nav>
+
+    <aside
+      id="default-sidebar"
+      class="absolute top-0 left-0 z-40 sm:z-10 w-64 h-screen max-h-screen transition-transform -translate-x-full sm:translate-x-0 sm:pt-16 overflow-scroll"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="./"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"
+                />
+              </svg>
+              <span class="ml-3">คู่มือการใช้งาน</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./keys.html"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  d="M14 7h-1.5V4.5a4.5 4.5 0 1 0-9 0V7H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-5 8a1 1 0 1 1-2 0v-3a1 1 0 1 1 2 0v3Zm1.5-8h-5V4.5a2.5 2.5 0 1 1 5 0V7Z"
+                />
+              </svg>
+              <span class="ml-3">ตั้งค่าkeys</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./log.html"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  d="M1 18h16a1 1 0 0 0 1-1v-6h-4.439a.99.99 0 0 0-.908.6 3.978 3.978 0 0 1-7.306 0 .99.99 0 0 0-.908-.6H0v6a1 1 0 0 0 1 1Z"
+                />
+                <path
+                  d="M4.439 9a2.99 2.99 0 0 1 2.742 1.8 1.977 1.977 0 0 0 3.638 0A2.99 2.99 0 0 1 13.561 9H17.8L15.977.783A1 1 0 0 0 15 0H3a1 1 0 0 0-.977.783L.2 9h4.239Z"
+                />
+              </svg>
+              <span class="ml-3">Log</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./setting.html"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"
+                />
+              </svg>
+              <span class="ml-3">ตั้งค่ากล่อง</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="mt-20 p-4 sm:ml-64 overflow-scroll max-h-screen h-fit">
+      <div class="flex w-full justify-center">
+        <form
+          class="block w-full sm:w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        >
+          <h1
+            class="mb-6 text-4xl font-bold tracking-tight flex items-center gap-1"
+          >
+            เข้าสู่ระบบ
+          </h1>
+
+          <div class="mb-3">
+            <label
+              for="username"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Username</label
+            >
+            <input
+              name="username"
+              id="username"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder=""
+            />
+          </div>
+          <div class="mb-3">
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Password</label
+            >
+            <input
+              name="password"
+              id="password"
+              type="password"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder=""
+            />
+          </div>
+          <button
+            type="submit"
+            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+          >
+            เข้าสู่ระบบ
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
